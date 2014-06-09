@@ -61,6 +61,12 @@ LOCAL_SHARED_LIBRARIES := \
 
 LOCAL_CFLAGS += -ftrapv
 
+ifeq ($(TARGET_USES_LIBEXIF_COMPAT),true)
+LOCAL_C_INCLUDES += external/jhead
+LOCAL_SRC_FILES += exif-compat.c
+LOCAL_LDFLAGS += -ldl
+endif
+
 include $(BUILD_SHARED_LIBRARY)
 
 # WARNING: this makefile builds a shared library. Do not ever make it build
