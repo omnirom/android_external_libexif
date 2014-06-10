@@ -16,6 +16,24 @@
       "revId": "37e5a8d01a4ded8b5a8ccd5cb01acbcfe1f2784d",
       "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8b77b57d_22405ca9",
+        "filename": "libexif/exif-compat.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1000284
+      },
+      "writtenOn": "2014-06-10T02:49:38Z",
+      "side": 1,
+      "message": "Well this is attempting to get ImageInfo",
+      "parentUuid": "8b77b57d_e23d8429",
+      "revId": "37e5a8d01a4ded8b5a8ccd5cb01acbcfe1f2784d",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
     }
   ]
 }
