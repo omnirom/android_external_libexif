@@ -25,9 +25,15 @@
 
 #define LIBPATH "libjhead.so"
 
-// Compatibility functions which call the according functions from libjhead
 ImageInfo_t ImageInfo;
 
+static Section_t * Sections = NULL;
+static int SectionsAllocated;
+static int SectionsRead;
+static int HaveAll;
+
+
+// Compatibility functions which call the according functions from libjhead
 void ErrFatal(char * msg) {
 	void *handle = dlopen(LIBPATH, RTLD_LAZY);
 	void (*err)(char*);
